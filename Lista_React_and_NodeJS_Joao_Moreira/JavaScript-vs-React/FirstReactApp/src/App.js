@@ -22,6 +22,11 @@ const content = [
   [
     "Projetos 'Vanilla JavaScript' requer uma programação imperativa, isto é, necessita-se da descriação de cada detalhe, passo-a-passo para alcançar um resultado",
     "Já o React, abrange a programação declarativa, isto que dizer que: com o React, você define seu objetivo e o React definie (se resolve) para alcançá-lo!"
+  ],
+  [
+    "Facebook",
+    "Netflix", 
+    "Uber"
   ]
 ];
 
@@ -57,6 +62,16 @@ export default function App() {
             onClick={() => setActiveContentIndex(2)}
           >
             Assunto Relacionado e Referência
+          </button>
+          <button className={activeContentIndex === 3 ? "active" : ""}
+          onClick={() => setActiveContentIndex(3)}
+          >
+            Diferença entre React e Vanilla JS
+          </button>
+          <button className={activeContentIndex === 4 ? "active" : ""}
+          onClick={() => setActiveContentIndex(4)}
+          >
+            Empresas que usam React
           </button>
         </menu>
         <div id="tab-content">
