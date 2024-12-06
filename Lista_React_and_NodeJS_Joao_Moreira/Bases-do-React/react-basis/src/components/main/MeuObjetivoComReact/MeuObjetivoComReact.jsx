@@ -1,12 +1,7 @@
 /* eslint-disable no-unused-vars */
 import "./MeuObjetivoComReact.css";
+import { objetivos } from "../../../data"
 const MeuObjetivoComReact = () => {
-  const objetivos = [
-    "Criar aplicações otimizadas e de reação rápidas",
-    "Criar webaps belos e dinâmicos",
-    "Criar meu próprio website",
-  ];
-
   return (
     <>
       <h2>Meus Objetivos com React</h2>
